@@ -1,0 +1,110 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFEB3B;
+    color: #212121;
+}
+
+header{
+    width: 100%;
+}
+
+.header__logo{
+    width: 180px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    border-top: 3px solid #7C4DFF;
+    border-right: 3px solid #7C4DFF;
+    border-bottom: 6px solid #7C4DFF;
+    border-left: 6px solid #7C4DFF;
+    
+}
+
+header span{
+    margin-left: 35%;
+    color: #7C4DFF;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.nav__items{
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.nav__items img{
+    width: 40px;
+    margin: 2%;
+}
+
+main{
+    width: 100%;
+}
+
+main p{
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    color: #212121;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+section{
+    width: 100%;
+    margin-top: 10%;
+}
+
+section ul{
+    text-align: center;
+    list-style: none;
+}
+
+section a{
+    text-decoration: none;
+}
+
+ul li{
+    margin-bottom: 15%;
+}
+
+.btn{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: bold;
+    color: #7C4DFF;
+    background-color: #FFF9C4;
+    text-decoration: none;
+    padding: 15px 23px;
+    border-top: 1.5px solid #212121;
+    border-right: 1.5px solid #212121;
+    border-bottom: 4px solid #212121;
+    border-left: 4px solid #212121;
+    width: 200px;
+    
+}
+
+.btn:hover{
+    background-color: #7C4DFF;
+    color: #FFF9C4;
+}
+
+
+footer p{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    color: #757575;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
