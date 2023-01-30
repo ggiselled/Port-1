@@ -42,30 +42,33 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="/img/profile.jpeg" class="header__logo" alt="logo Giselle Goenaga">
-        <span>@ggiselled</span>
-    </header>
-    <nav class="nav__items">
-        <a href="https://www.linkedin.com/in/ggiselled"><img src="/img/signo-de-linkedin.png" alt="Linkedin"></a>
-        <a href="https://www.instagram.com/ggiselled"><img src="/img/instagram.png" alt="Instagram"></a>
-        <a href="https://www.github.com/ggiselled"><img src="/img/github.png" alt="Github"></a>
-        <a href="mailto:gdgoenaga@gmail.com"><img src="/img/email.png" alt="Mail"></a>
-    </nav>
-    <main>
-        <p>¡Hola! Mi nombre es Giselle y soy desarrolladora frontend. Actualmente cuento con conocimientos en HTML, CSS, JavaScript y React. Te invito a conocer los proyectos que fui creando y cómo voy evolucionando con ellos 👇 </p>
-    </main>
-    <section>
-        <ul>
-            <li ><a href="#" class="btn">Mis proyectos 🚀</a> <li> 
-            <li ><a href="#" class="btn">Mis skills 🦾</a> </li>
-            <li ><a href="#" class="btn">Mis metas 🌌 </a> </li>
-        </ul>
-    </section>
-    <footer>
-        <hr>
-        <p>Copyright © Giselle Goenaga - Summerhack 2023</p>
-    </footer>
+    <div itemscope="" itemtype="https://schema.org/Person">
+
+        <header>
+            <img src="/img/profile.jpeg" class="header__logo" alt="logo Giselle Goenaga" itemprop="image">
+            <span itemprop="name">@ggiselled</span>
+        </header>
+        <nav class="nav__items">
+            <a href="https://www.linkedin.com/in/ggiselled"><img src="/img/signo-de-linkedin.png" alt="Linkedin" itemprop="url"></a>
+            <a href="https://www.instagram.com/ggiselled"><img src="/img/instagram.png" alt="Instagram" itemprop="url"></a>
+            <a href="https://www.github.com/ggiselled"><img src="/img/github.png" alt="Github" itemprop="url"></a>
+            <a href="mailto:gdgoenaga@gmail.com"><img src="/img/email.png" alt="Mail" itemprop="url"></a>
+        </nav>
+        <main>
+            <p itemprop="description">¡Hola! Mi nombre es Giselle y soy desarrolladora frontend. Actualmente cuento con conocimientos en HTML, CSS, JavaScript y React. Te invito a conocer los proyectos que fui creando y cómo voy evolucionando con ellos 👇 </p>
+        </main>
+        <section>
+            <ul>
+                <li ><a href="#" class="btn" itemprop="url">Mis proyectos 🚀</a> <li> 
+                <li ><a href="#" class="btn" itemprop="url">Mis skills 🦾</a> </li>
+                <li ><a href="#" class="btn" itemprop="url">Mis metas 🌌 </a> </li>
+            </ul>
+        </section>
+        <footer>
+            <hr>
+            <p itemprop="author">Copyright © Giselle Goenaga - Summerhack 2023</p>
+        </footer>
+    </div>
 
 </body>
 </html>
