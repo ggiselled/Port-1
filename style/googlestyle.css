@@ -2,18 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-
-/* Herramientas */
-
-
-/*             */
 
 body{
     background-color: #202124;
+    height: 100vh;
 }
 
 header{
+    font-size: 13px;
     width: 100%;
     height: 60px;
     display: flex;
@@ -29,7 +27,6 @@ header{
 }
 
 .options li a{
-    font-family: Arial, sans-serif;
     text-decoration: none;
     padding: 5px;
     color: #fff
@@ -37,13 +34,154 @@ header{
 
 .dots-logo{
     display: inline-block;
-    background-image: url(/ggiselled.github.io/img/dots-logo.svg);
+    background-image: url(/img/dots-logo.svg);
     height: 24px;
     width: 24px;
+}
+.dots-logo:hover{
+    border: solid 1px #5f6368;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #5f6368;
 }
 
 .options a img{
     width: 32px;
     height: 34px;
     border-radius: 50%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 60px - 84px);
+}
+
+.main__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+.main__container img{
+    height: 92px;
+}
+
+.main__container p{
+    color: #fff;
+    font-size: small;
+}
+
+.main__container p a{
+    color: #8ab4f8;
+    text-decoration: none;
+}
+
+.searcher{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 8px;
+    width: 500px;
+    gap: 5px;
+    border: 1px solid #303134;
+    border-radius: 24px;
+}
+
+.searcher:hover{
+    background-color: #5f6368;
+}
+
+.searcher input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+.searcher input:hover{
+    background-color: #5f6368;
+}
+
+.searcher button{
+    border: none;
+    background-color: transparent;
+}
+
+.searcher__button button:hover{
+    border: 0.2px solid #5f6368;
+}
+
+.searcher__logo{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(/img/lupe-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.searcher__micro{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(/img/micro-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.searcher__cam{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(/img/cam-logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.searcher__button button{
+    background-color: #303134;
+    border: none;
+    color: #fff;
+    border-radius: 6px;
+    padding: 0 16px;
+    height: 30px;
+}
+
+.FooterGoogle{
+    display: flex;
+    flex-direction: column;
+    height: 82px;
+    background-color: #171717;
+    font-size: 14px;
+}
+
+.FooterGoogle__country{
+    color: #9aa0a6;
+    padding: 15px 30px;
+    font-size: 15px;
+    border-bottom: 1px solid #3c4043;
+}
+
+.FooterGoogle__links{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.FooterGoogle__links ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.FooterGoogle__links li a{
+    text-decoration: none;
+    color: #9aa0a6ff;
+    padding: 10px;    
 }
