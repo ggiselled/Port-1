@@ -45,6 +45,25 @@ header{
     background-color: #5f6368;
 }
 
+.chocolate{
+    border-radius: 10px;
+    box-shadow: -1px -1px 5px rgba(0, 0, 0,0.5);
+    position: absolute;
+    top: 48px;
+    right: 10px;
+    padding: 12px;
+    width: 328px;
+    height: 400px;
+    background-color: #333438;
+    display: none;
+}
+
+
+
+.chocolate.active{
+    display: block;
+}
+
 .options a img{
     width: 32px;
     height: 34px;
@@ -80,14 +99,21 @@ main{
 }
 
 .searcher{
+
     display: flex;
-    align-items: center;
-    height: 40px;
-    padding: 8px;
-    width: 500px;
-    gap: 5px;
-    border: 1px solid #303134;
+    z-index: 3;
+    height: 24px;
+    background: #202124;
+    border: 1px solid #5f6368;
+    box-shadow: none;
     border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    max-width: 584px;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    position: relative;
 }
 
 .searcher:hover{
@@ -101,9 +127,44 @@ main{
     color: #fff;
 }
 
+.searcher input:focus{
+    outline: none;
+}
+
 .searcher input:hover{
     background-color: #5f6368;
 }
+
+.historial {
+    position: absolute;
+    top: 24px;
+    background-color: #2f3135;
+    border-radius: 0 0 24px 24px;
+    width: 100%;
+    left: -1px;
+    height: 200px;
+    border: 1px solid #5f6368;
+    border-top: none;
+    z-index: -1;
+    display: none;
+}
+
+.historial.active{
+    display: block;
+}
+
+.historial a{
+    display: flex;
+    padding: 9px;
+    text-decoration: none;
+    color: #9aa0a6;
+}
+
+.historial a:hover{
+    background-color: #5f6368;
+}
+
+
 
 .searcher button{
     border: none;
