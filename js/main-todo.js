@@ -3,6 +3,7 @@ let btn = document.querySelector("button");
 let ul = document.querySelector("ul");
 let empty = document.querySelector(".empty");
 let mySelect = document.getElementById("my-select");
+let priority = document.getElementById("priority")
 
 btn.addEventListener("click", function (e) {
   e.preventDefault();
@@ -15,7 +16,7 @@ btn.addEventListener("click", function (e) {
     for (let i = 0; i < lastTasks.length; i++) {
       if (
         lastTasks[i].textContent.startsWith(task) &&
-        lastTasks[i].textContent.endsWith(`-- ${mySelect.value}`)
+        lastTasks[i].textContent.endsWith(`-- ${mySelect.value} -- ${priority.value}`)
       ) {
      taskRepeat = true
         break;
@@ -26,7 +27,7 @@ btn.addEventListener("click", function (e) {
     } else {
       let li = document.createElement("li")
       let p = document.createElement("p")
-      let tarea = `${task} -- ${mySelect.value}`
+      let tarea = `${task} -- ${mySelect.value} -- ${priority.value}`
       p.textContent = tarea
       li.appendChild(p)
       li.appendChild(taskDelete())
