@@ -1,7 +1,6 @@
 let input = document.querySelector("input");
 let btn = document.querySelector("button");
 let ul = document.querySelector("ul");
-let empty = document.querySelector(".empty");
 let mySelect = document.getElementById("my-select");
 let priority = document.getElementById("priority")
 
@@ -15,8 +14,8 @@ btn.addEventListener("click", function (e) {
     let lastTasks = document.querySelectorAll("li p")
     for (let i = 0; i < lastTasks.length; i++) {
       if (
-        lastTasks[i].textContent.startsWith(task) &&
-        lastTasks[i].textContent.endsWith(`-- ${mySelect.value} -- ${priority.value}`)
+        lastTasks[i].textContent.startsWith(mySelect.value) &&
+        lastTasks[i].textContent.endsWith(`-- ${task} -- ${priority.value}`)
       ) {
      taskRepeat = true
         break;
@@ -27,13 +26,20 @@ btn.addEventListener("click", function (e) {
     } else {
       let li = document.createElement("li")
       let p = document.createElement("p")
-      let tarea = `${task} -- ${mySelect.value} -- ${priority.value}`
+      let tarea = `${mySelect.value} -- ${task} -- ${priority.value}`
       p.textContent = tarea
       li.appendChild(p)
       li.appendChild(taskDelete())
       ul.appendChild(li)
       input.value = "";
-      empty.style.display = "none"
+
+      if(priority.value == "urgente"){
+        p.className = "p-urgente"
+      }else if (priority.value == "postergable"){
+        p.className = "p-postergable"
+      }else{
+        p.className = "p-opcional"
+      }
     }
   }
 })

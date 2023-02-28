@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/todostyle.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Lista de tareas</h1>
+        <div class="search">
+            <form>
+                <select name="categoría" required id="my-select">
+                    <option selected disabled>Categoría</option>
+                    <option value="Hogar">Hogar</option>
+                    <option value="Mascotas">Mascotas</option>
+                    <option value="Tiempo libre">Tiempo libre</option>
+                    <option value="Trabajo">Trabajo</option>
+                </select>
+                <i></i>
+                <select name="priority" id="priority">
+                    <option selected disabled>Prioridad</option>
+                    <option value="urgente">Urgente</option>
+                    <option value="postergable">Postergable</option>
+                    <option value="opcional">Opcional</option>
+                </select>
+                <i></i>
+            </form>
+            <div class="input-container">
+                <input type="text" name="tareas" placeholder="¡Agregá una tarea!" required>
+                <button class="btn">+</button>
+            </div>
+        </div>
+    
+        <div class="task-container">
+            <ul>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="/js/main-todo.js"></script>
+</body>
+</html>
