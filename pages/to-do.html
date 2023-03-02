@@ -13,7 +13,19 @@
     <div class="container">
 
         <h1>Lista de tareas</h1>
-        <div class="search">
+
+        <!-- Purueba aparición -->
+
+        <div id="empty">
+            <p>No hay tareas pendientes</p>
+            <button id="firstTask">Agregar</button>
+        </div>
+
+
+        <!--  -->
+
+
+        <div class="search" id="todo">
             <form>
                 <select name="categoría" required id="my-select">
                     <option selected disabled>Categoría</option>
@@ -33,7 +45,7 @@
             </form>
             <div class="input-container">
                 <input type="text" name="tareas" placeholder="¡Agregá una tarea!" required>
-                <button class="btn">+</button>
+                <button class="btn" id="btn">+</button>
             </div>
         </div>
     
