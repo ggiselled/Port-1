@@ -1,27 +1,29 @@
-// Prueba aparición
+
 
 let empty = document.getElementById('empty')
 let firstTask = document.getElementById('firstTask')
 let todo = document.getElementById('todo')
-
-//
-
-
 let input = document.querySelector("input");
 let btn = document.getElementById("btn");
 let ul = document.querySelector("ul");
 let mySelect = document.getElementById("my-select");
 let priority = document.getElementById("priority")
+let btnBack = document.getElementById('btnBack')
 
 
-//Prueba aparición
 
 firstTask.addEventListener('click', () => {
   todo.style.display = 'block'
   empty.style.display ='none'
+  btnBack.style.display ='block'
 })
 
-//
+btnBack.addEventListener('click', () =>{
+  empty.style.display = 'block'
+  todo.style.display = 'none'
+  btnBack.style.display = 'none'
+})
+
 
   btn.addEventListener("click", function (e) {
     e.preventDefault();
@@ -52,6 +54,7 @@ firstTask.addEventListener('click', () => {
         ul.appendChild(li)
   
         input.value = "";
+
   
         if(priority.value == "urgente"){
           p.className = "p-urgente"
