@@ -13,18 +13,13 @@
     <div class="container">
 
         <h1>Lista de tareas</h1>
-
-        <!-- Purueba aparición -->
-
-        <div id="empty">
-            <img src="/img/todo-img/empty.png" alt="">
-            <p>No hay tareas pendientes</p>
-            <button id="firstTask" >+</button>
+        <div id="notask" class="notask">
+            <div id="empty" class="empty">
+                <img src="/img/todo-img/empty.png" alt="">
+                <p>No hay tareas pendientes</p>
+                <button id="firstTask" class="firstTask" >+</button>
+            </div>
         </div>
-
-
-        <!--  -->
-
 
         <div class="search" id="todo">
             <form>
@@ -50,10 +45,17 @@
             </div>
         </div>
 
-        <div class="task-container">
+        <div class="task-container" id="taskContainer">
             <ul>
                 
             </ul>
+        </div>
+
+        <div id="yestask" class="notask">
+            <div id="pending" class="empty">
+                <img src="/img/todo-img/urgente.png" alt="">
+                <p>Tenés tareas pendientes</p>
+            </div>
         </div>
 
         

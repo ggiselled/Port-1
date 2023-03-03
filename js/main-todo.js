@@ -1,6 +1,8 @@
 
 
-let empty = document.getElementById('empty')
+let notask = document.getElementById('notask')
+let yestask = document.getElementById('yestask')
+let taskContainer = document.getElementById('taskcontainer')
 let firstTask = document.getElementById('firstTask')
 let todo = document.getElementById('todo')
 let input = document.querySelector("input");
@@ -14,14 +16,24 @@ let btnBack = document.getElementById('btnBack')
 
 firstTask.addEventListener('click', () => {
   todo.style.display = 'block'
-  empty.style.display ='none'
+  notask.style.display ='none'
   btnBack.style.display ='block'
 })
 
 btnBack.addEventListener('click', () =>{
-  empty.style.display = 'block'
+  notask.style.display = 'block'
   todo.style.display = 'none'
   btnBack.style.display = 'none'
+
+  // let lastTasks = document.querySelectorAll("li p")
+
+  // if (lastTasks){
+  //   notask.style.display = 'none'
+  //   yestask.style.display = 'block'
+  // }else if (taskDelete()){
+  //   notask.style.display = 'block'
+  //   yestask.style.display = 'none'
+  // }
 })
 
 
@@ -79,7 +91,7 @@ function taskDelete() {
 
     let items = document.querySelectorAll('li')
     if (items.length === 0){
-      empty.style.display = 'block'
+      notask.style.display = 'block'
       todo.style.display ='none'
     }
 
