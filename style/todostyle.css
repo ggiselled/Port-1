@@ -237,16 +237,7 @@ li p {
     background-color: #a3ffac;
 }
 
-.back{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.btnBack{
-    display: none;
-}
-
-#yestask{
-    display: none;
+.notask{
+ display: block;
 }
